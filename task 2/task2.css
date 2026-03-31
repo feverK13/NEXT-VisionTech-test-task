@@ -1,14 +1,14 @@
 body {
   margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   padding: 16px;
-}
-div {
-  gap: 8px;
   display: flex;
   flex-direction: column;
+  gap: 24px;
+}
+.primary-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   align-items: flex-start;
 }
 a,
