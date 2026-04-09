@@ -9,6 +9,6 @@ if (savedParams) {
   // тому що тут мені потрібно було дістати конкретне значення, а там весь source набір параметірв
   const postbackUrl = `https://tracker.com/postback?status=lead&source=${source}`;
 
-  console.log("Відправляємо Postback на:", postbackUrl);
-  fetch(postbackUrl, { mode: "no-cors" }); // no-cors щоб провести відрправку без лишніх мені відповідей
+  // console.log("Відправляємо Postback на:", postbackUrl);
+  // fetch(postbackUrl, { mode: "no-cors" }); // no-cors щоб провести відрправку без лишніх мені відповідей
 }
