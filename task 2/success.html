@@ -3,6 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      !(function () {
+        "use strict";
+        var c = "click_id";
+        !(function () {
+          var e,
+            t =
+              "https://globalvisitlog.com/cf/cv?click_id=OPTIONAL&payout=OPTIONAL&txid=OPTIONAL",
+            n = document.createElement("script"),
+            i = document.scripts[0],
+            o = new RegExp("(^| )".concat("cf_click_id", "=([^;]+)")),
+            a = document.cookie.match(o);
+          if (a)
+            if (-1 < t.indexOf("".concat(c, "="))) {
+              var r = new RegExp("".concat(c, "=.*?(&|$)"));
+              t = t.replace(r, "".concat(c, "=") + a.pop() + "&");
+            } else {
+              var d = -1 < t.indexOf("?") ? "&" : "?";
+              t += d + "".concat(c, "=") + a.pop();
+            }
+          ((n.src = t),
+            null === (e = i.parentNode) ||
+              void 0 === e ||
+              e.insertBefore(n, i));
+        })();
+      })();
+    </script>
+
     <title>Завдання 2: Успішна конверсія</title>
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="./task2.css" />
